@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a){
+                let answer = ""
+
+                for(let i=0; i<a.length; i++){
+                    if(a.indexOf(a[i])===i) answer+=a[i];
+                }
+                return answer;
+            }
+
+            console.log(solution('ksekkset'));
+
+        </script>
+    </body>
+</html>

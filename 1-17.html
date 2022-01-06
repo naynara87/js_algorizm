@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){
+                let answer;
+
+                answer = arr.filter((v,i)=>{
+                    if(arr.indexOf(v)===i) return v;
+                })
+
+                return answer;
+            }
+
+            let arr = ['good','time','good','time','student']
+
+            console.log(solution(arr));
+
+        </script>
+    </body>
+</html>

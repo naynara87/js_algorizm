@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(w){
+                let answer = "";
+                for(let x of w){
+                    if(x===x.toLowerCase()) answer+=x.toUpperCase();
+                    else answer+=x;
+                }
+                
+                return answer;
+
+            }
+            console.log(solution('ItisTimeToStudy'));
+
+        </script>
+    </body>
+</html>

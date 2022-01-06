@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){  
+                let answer="";
+                let cnt=1;
+                s=s+" ";//빈문자 받아서 앞에 알파벳과 비교
+                console.log(s)
+                for(let i=0; i<s.length-1; i++){
+                    if(s[i]===s[i+1]) cnt++;
+                    else{
+                        answer+=s[i];
+                        if(cnt>1) answer+=String(cnt);
+                        cnt=1;
+                    }
+                }
+                return  answer;//문자열을 정수로 바꾸기
+            }
+            console.log(solution('KKHSSSSSSSEK'));
+
+
+
+        </script>
+    </body>
+</html>

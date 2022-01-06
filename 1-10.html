@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(word,alphabet){
+                // let answer = 0;
+
+                // for (x of word){
+                //     if(x == alphabet) answer++;
+                // }
+                       
+                let answer = word.split(alphabet).length;
+                return answer -1;
+            }
+            console.log(solution('COMPUTERPROGRAMMING','R'));
+
+        </script>
+    </body>
+</html>

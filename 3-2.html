@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){  
+                let answer="YES";
+                s=s.toLowerCase().replace(/[^a-z]/g, '');
+
+                console.log(s.split('').reverse().join(''));
+                if(s.split('').reverse().join('')!==s) return "NO";
+                return answer;
+            }
+            console.log(solution('found7, time: study; Yduts; emit, 7Dnuof'));
+
+
+
+        </script>
+    </body>
+</html>
